@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/img_bg_black"
+    tools:context=".list_putbills">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#7f3399cc" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="入库单据列表"
+        android:textColor="#ccc"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/icon_zjt"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintStart_toStartOf="@+id/top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/zuojiantou" />
+
+    <ListView
+        android:id="@+id/list_putbill"
+        android:layout_width="fill_parent"
+        android:layout_height="444dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:divider="#ccc"
+        android:dividerHeight="1dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minday"
+        tools:ignore="MissingConstraints" />
+
+    <com.example.administrator.myapplication.TextColorNumberPicker
+        android:id="@+id/minyear"
+        android:layout_width="40dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        tools:ignore="MissingConstraints" />
+
+    <com.example.administrator.myapplication.TextColorNumberPicker
+        android:id="@+id/minmonth"
+        android:layout_width="30dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/textView16"
+        tools:ignore="MissingConstraints" />
+
+    <com.example.administrator.myapplication.TextColorNumberPicker
+        android:id="@+id/minday"
+        android:layout_width="30dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView26"
+        app:layout_constraintEnd_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="@+id/textView26"
+        tools:ignore="MissingConstraints" />
+
+    <com.example.administrator.myapplication.TextColorNumberPicker
+        android:id="@+id/maxyear"
+        android:layout_width="40dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView26"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="@+id/textView26"
+        tools:ignore="MissingConstraints" />
+
+    <com.example.administrator.myapplication.TextColorNumberPicker
+        android:id="@+id/maxday"
+        android:layout_width="30dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/textView20"
+        tools:ignore="MissingConstraints" />
+
+    <com.example.administrator.myapplication.TextColorNumberPicker
+        android:id="@+id/maxmonth"
+        android:layout_width="30dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView19"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="@+id/textView19"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="—"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/minmonth"
+        app:layout_constraintEnd_toStartOf="@+id/minmonth"
+        app:layout_constraintTop_toTopOf="@+id/minmonth"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="—"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/minday"
+        app:layout_constraintEnd_toStartOf="@+id/minday"
+        app:layout_constraintTop_toTopOf="@+id/minday"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="8dp"
+        android:text="至"
+        android:textColor="#ccc"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="—"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/maxyear"
+        app:layout_constraintStart_toEndOf="@+id/maxyear"
+        app:layout_constraintTop_toTopOf="@+id/maxyear"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:text="—"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/maxmonth"
+        app:layout_constraintStart_toEndOf="@+id/maxmonth"
+        app:layout_constraintTop_toTopOf="@+id/maxmonth"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

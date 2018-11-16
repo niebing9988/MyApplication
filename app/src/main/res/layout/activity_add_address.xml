@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/img_bg_black"
+    tools:context=".list_address">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#7f3399cc"
+        android:theme="@style/AppTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="添加通讯录"
+        android:textColor="#ccc"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toStartOf="@+id/icon_bianji"
+        app:layout_constraintStart_toEndOf="@+id/icon_zjt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/icon_bianji"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/duigou" />
+
+    <ImageView
+        android:id="@+id/icon_zjt"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintStart_toStartOf="@+id/top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/zuojiantou" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="40dp"
+        android:text="公司名称"
+        android:textAlignment="center"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="地址"
+        android:textAlignment="center"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="网址"
+        android:textAlignment="center"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="备注"
+        android:textAlignment="center"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="联系人"
+        android:textAlignment="center"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="固定电话"
+        android:textAlignment="center"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="移动电话"
+        android:textAlignment="center"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/text_conname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="请输入公司名称"
+        android:inputType="textPersonName"
+        android:textColor="#ccc"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/text_adname"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="请输入联系人"
+        android:inputType="textPersonName"
+        android:textColor="#ccc"
+        app:layout_constraintStart_toStartOf="@+id/text_conname"
+        app:layout_constraintTop_toBottomOf="@+id/text_conname" />
+
+    <EditText
+        android:id="@+id/text_adtell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="请输入联系人移动电话"
+        android:inputType="textPersonName"
+        android:textColor="#ccc"
+        app:layout_constraintStart_toStartOf="@+id/text_adname"
+        app:layout_constraintTop_toBottomOf="@+id/text_adname" />
+
+    <EditText
+        android:id="@+id/text_fixedtell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="请输入联系人固定电话"
+        android:inputType="textPersonName"
+        android:textColor="#ccc"
+        app:layout_constraintStart_toStartOf="@+id/text_adtell"
+        app:layout_constraintTop_toBottomOf="@+id/text_adtell" />
+
+    <EditText
+        android:id="@+id/text_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="请输入联系人地址"
+        android:inputType="textPersonName"
+        android:textColor="#ccc"
+        app:layout_constraintStart_toStartOf="@+id/text_fixedtell"
+        app:layout_constraintTop_toBottomOf="@+id/text_fixedtell" />
+
+    <EditText
+        android:id="@+id/text_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#ccc"
+        app:layout_constraintStart_toStartOf="@+id/text_address"
+        app:layout_constraintTop_toBottomOf="@+id/text_address" />
+
+    <EditText
+        android:id="@+id/text_remarke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#ccc"
+        app:layout_constraintStart_toStartOf="@+id/text_url"
+        app:layout_constraintTop_toBottomOf="@+id/text_url" />
+
+    <ImageView
+        android:id="@+id/img_tj"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_adname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/text_adname"
+        app:layout_constraintTop_toTopOf="@+id/text_adname"
+        app:srcCompat="@drawable/tianjiayonghu" />
+
+</android.support.constraint.ConstraintLayout>

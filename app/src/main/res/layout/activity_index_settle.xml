@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg"
+    tools:context=".index_product">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#7f3399cc" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:text="门店管理系统"
+        android:textColor="#ccc"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_tx"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tongxunlu" />
+
+    <View
+        android:id="@+id/body1"
+        android:layout_width="145dp"
+        android:layout_height="210dp"
+        android:alpha="0.3"
+        android:background="@drawable/shape20dip"
+        app:layout_constraintBottom_toTopOf="@+id/kzx"
+        app:layout_constraintCircleRadius="30dp"
+        app:layout_constraintStart_toStartOf="@+id/kzx"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/body2"
+        android:layout_width="145dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="0.3"
+        android:background="@drawable/shape20dip"
+        app:layout_constraintBottom_toTopOf="@+id/body3"
+        app:layout_constraintCircleRadius="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/body3"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/body3"
+        android:layout_width="145dp"
+        android:layout_height="100dp"
+        android:alpha="0.3"
+        android:background="@drawable/shape20dip"
+        app:layout_constraintBottom_toTopOf="@+id/kzx"
+        app:layout_constraintCircleRadius="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/kzx"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/body6"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:alpha="0.3"
+        android:background="@drawable/shape20dip"
+        app:layout_constraintCircleRadius="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/kzx"
+        app:layout_constraintStart_toStartOf="@+id/kzx"
+        app:layout_constraintTop_toBottomOf="@+id/kzx"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:alpha="0.5"
+        android:background="#99ccff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:id="@+id/kzx"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="还未与服务器同步，如需同步请点击同步!"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_product"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="货品"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ccc"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom"
+        app:layout_constraintEnd_toStartOf="@+id/text_put"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottom"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_put"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="入库"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ccc"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom"
+        app:layout_constraintEnd_toStartOf="@+id/text_out"
+        app:layout_constraintTop_toTopOf="@+id/bottom"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_out"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="出库"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ccc"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom"
+        app:layout_constraintEnd_toStartOf="@+id/text_settle"
+        app:layout_constraintTop_toTopOf="@+id/bottom"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_settle"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0.7"
+        android:background="#6699ff"
+        android:gravity="center"
+        android:text="统计"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom"
+        app:layout_constraintEnd_toEndOf="@+id/bottom"
+        app:layout_constraintTop_toTopOf="@+id/bottom"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="同  步  到  服  务  器"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/body6"
+        app:layout_constraintEnd_toEndOf="@+id/body6"
+        app:layout_constraintStart_toStartOf="@+id/body6"
+        app:layout_constraintTop_toTopOf="@+id/body6" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新建"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/body1"
+        app:layout_constraintEnd_toEndOf="@+id/body1"
+        app:layout_constraintStart_toStartOf="@+id/body1"
+        app:layout_constraintTop_toTopOf="@+id/body1"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="结账单据"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上一笔"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/body2"
+        app:layout_constraintEnd_toEndOf="@+id/body2"
+        app:layout_constraintStart_toStartOf="@+id/body2"
+        app:layout_constraintTop_toTopOf="@+id/body2"
+        app:layout_constraintVertical_bias="0.26999998" />
+
+    <TextView
+        android:id="@+id/TextView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="结账单据"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/TextView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="历史结账"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/body3"
+        app:layout_constraintEnd_toEndOf="@+id/body3"
+        app:layout_constraintStart_toStartOf="@+id/body3"
+        app:layout_constraintTop_toTopOf="@+id/body3"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/text_settletalllist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="单据共10单"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/TextView11"
+        app:layout_constraintStart_toStartOf="@+id/TextView11"
+        app:layout_constraintTop_toBottomOf="@+id/TextView11" />
+
+</android.support.constraint.ConstraintLayout>
